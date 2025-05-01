@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson14-14a Exercises</title>
+    <style>
+        p {
+            margin: 0px;
+            font-size: 10px;
+        }
+
+        body {
+            height: 2000px;
+        }
+
+        .rajlal {
+            background-color: green;
+            color: white;
+            position: fixed;
+            padding-right: 20px;
+            top: 0px;
+            right: 0px;
+            height: 500px;
+        }
+
+        .container {
+            background-color: white;
+            width: 300px;
+            height: 100px;
+            border-radius: 5px;
+
+        }
+
+        .head {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .mid {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .sub-container {
+            padding-left: 10px;
+            padding-top: 14px;
+        }
+
+        .flex-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: rgba(0, 0, 0, 0.377);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="rajlal">
+        right sidebar
+    </div>
+    <div class="flex-box">
+        <div class="container">
+            <div class="sub-container">
+                <div class="head">
+                    Modal Title
+                </div>
+                <div class="mid">
+                    This is a modal
+                </div>
+                <div class="click">
+                    <button class="button-click">
+                        <p>Close</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-NavBar</title>
+
+    <STYLE>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        :root {
+            --color: balck;
+            --text-color: white;
+            --texture-color: rgb(0, 102, 255);
+        }
+
+        .menu {
+            height: 30px;
+
+        }
+
+        .cross {
+            height: 30px;
+        }
+
+        nav {
+            background-color: black;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .menu-link {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 0 20px;
+            color: var(--text-color);
+        }
+
+        a:hover {
+            background-color: var(--texture-color);
+        }
+
+        .home-link {
+            margin-right: auto;
+        }
+
+        #check-box {
+            display: none;
+
+        }
+
+        .Open-sidebar,
+        .Close-sidebar {
+            display: none;
+        }
+
+        @media(max-width:412px) {
+
+            .menu-link {
+                flex-direction: column;
+                align-items: flex-start;
+                position: fixed;
+                top: 0px;
+                right: -210px;
+                z-index: 10px;
+                width: 200px;
+                background-color: black;
+                box-shadow: -5px 0px 5px rgb(0, 0, 0, 0.25);
+                transition: 0.25s;
+            }
+
+            a {
+                height: auto;
+                width: 100%;
+                padding: 20px 30px;
+                justify-content: flex-start;
+            }
+
+            .Open-sidebar,
+            .Close-sidebar {
+                display: block;
+                padding: 20px;
+            }
+
+            #check-box:checked~.menu-link {
+                right: 0px;
+            }
+
+            #check-box:checked~#overlay{
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                top:0px;
+                left:0px;
+            }
+
+        }
+    </STYLE>
+
+</head>
+
+<body>
+    <nav> 
+        
+        <input type="checkbox" id="check-box">
+        <label for="check-box" class="Open-sidebar"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></label>
+
+       <label id="overlay" for="check-box"></label>
+
+        <div class="menu-link">
+            <label for="check-box" class="Close-sidebar"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></label>
+
+            <a class="home-link" href="#">Home</a>
+            <a class="About-link" href="#">About</a>
+            <a class="Product-link" href="#">Product</a>
+            <a class="skill-link" href="#">Skill</a>
+            <a class="blog-link" href="#">blog</a>
+
+        </div>
+   
+    </nav>
+</body>

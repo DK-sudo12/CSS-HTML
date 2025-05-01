@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthX</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url(image/planet-earth-space-night-some-elements-image-furnished-nasa-52734504.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: rgb(197, 194, 194);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200px;
+            letter-spacing: 5px;
+            font-weight: bold;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(7), blink 1s step-end 2s alternate;
+            border-right: 5px solid;
+            border-color: white;
+
+
+        }
+
+        .title {
+            display: inline-block;
+            margin-top: 20%;
+
+
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        form{
+            margin-top: 3%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .nam-box{
+            display: inline-block;
+            position: relative;
+        }
+        
+        label{
+            font-size: 80px;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 30px;
+            padding: 0px 5px;
+            transition: 0.5s;
+            background-color:transparent;
+        }
+
+        input{
+            height: 150px;
+            width: 700px;
+            border-radius: 100px;
+            border: none;
+            border-width: 0.5px;  
+            font-size: 70px;        
+        }
+
+        .email-box{
+            display: inline-block;
+            position: relative;
+            margin-top: 100px;
+        }
+
+        .nam-box input:focus~label,.nam-box:valid~label{
+            top: -50px;
+            color:rgb(175, 174, 174);
+        }
+
+        .email-box input:focus~label,.email-box:valid~label{
+            top: -50px;
+            color: rgb(104, 103, 103);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Earth X</h1>
+    </div>
+
+    <form class="enter">
+        <div class="nam-box">
+            <input type="text" class="input-nam" id="name"required>
+            <label for="name" class="nam-lab">Enter Name</label>
+        </div>
+
+        <div class="email-box">  
+            <input type="email" id="email"  required>
+            <label for="email">Email</label>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-14e</title>
+    <style>
+        p {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            left: 30px;
+            right: 30px;
+        }
+
+        .flex2 {
+            display: flex;
+        }
+
+        .together {
+            display: flex;
+        }
+
+        .name{
+            margin-left: 9px;
+            display: flex;
+            align-items: center;
+        }
+
+        .add-friends{
+            margin-right: 8px;
+        }
+        
+        .one{
+            background-color:rgb(0, 119, 255) ;
+            color: white;
+            border:none ;
+            border-radius: 4px;
+        }
+        .two{
+            background-color:rgb(228, 227, 227);
+            color: black;
+            border:none ;
+            border-radius: 4px;
+        }
+        .add{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 8px;
+            padding-left: 8px;
+            
+        }
+        .msg{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .photo{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            object-position:center;
+            border-radius:20px ;
+            vertical-align: middle;
+            display: flex;
+            justify-content: center;
+        }
+        .name{}
+    </style>
+</head>
+
+<body>
+    <DIV class="flex-box">
+
+        <div class="together">
+            <div class="photo-box">
+                <img class="photo" src="CSS/61eo0WHaqzL.jpg" alt="Cat">
+            </div>
+
+            <div class="name">
+               <p>Oliver Cat</p> 
+            </div>
+        </div>
+
+
+        <div class="flex2">
+
+            <div class="add-friends">
+                <button class="one">
+                    <p class="add">Add Friend</p>
+                </button>
+            </div>
+
+            <div class="msg-box">
+                <button class="two">
+                    <p class="msg">Message</p>
+                </button>
+            </div>
+    </div>
+    </DIV>
+</body>
+
+</html>

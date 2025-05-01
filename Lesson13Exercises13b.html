@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested flexbox 13b</title>
+    <style>
+        .bigflex {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+
+        }
+
+        .blank {
+            background-color: lightpink;
+            width: 100px;
+        }
+
+        .rows {
+            background-color: lightblue;
+            width: 200px;
+        }
+        .r2{
+            background-color: black;
+            color: white;
+        }
+        .r3{
+            background-color: black;
+            color: white;
+        }
+        .r2-r3{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigflex">
+        <div class="blank"></div>
+        <div class="rows">
+            <div class="r1">row1</div>
+            <div class="r2-r3">
+                <div class="r2">row2</div>
+                <div class="r3">row2</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

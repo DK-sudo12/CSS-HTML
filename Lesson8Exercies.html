@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8 - css display property</title>
+    <style>
+        .rohan,
+        .ton {
+            display: block;
+        }
+
+        .ton {
+            margin-top: 3px;
+        }
+
+        p{
+            display: inline-block;
+            width: 200px;
+            vertical-align: middle;
+        }
+
+        .jpg{
+            width: 200px;
+            justify-content: center;
+            display: block;
+            margin: auto;
+        }
+        .txt{
+            display: block;
+            width: 400px;
+            margin: auto;
+            padding-left: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.281);
+            border: none;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <input class="rohan" type="text" placeholder="Name">
+
+    <input class="ton" type="text" placeholder="Email">
+    <hr>
+
+    <p>
+        Thanks for chatting with our customer support. Would you
+        like to take our quick survey?
+    </p>
+
+    <button class="Yes">Yes</button>
+    <button class="No">No</button>
+
+    <hr>
+
+    <img class="jpg" src="Google_2015_logo.svg.webp" alt="google">
+    <input class="txt" type="text" placeholder="Search Google or type a URL">
+
+
+
+</body>
+
+</html>

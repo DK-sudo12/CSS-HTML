@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeWriter Animation</title>
+
+    <style>
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .container{
+            display: inline-block;
+        }
+
+        p{
+            color: rgb(248, 83, 83);
+            font-size: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 5px;
+            border-right: 5px solid;
+            width: 100%;
+            /* white-space: nowrap; */
+            overflow: hidden;
+            animation: typing 1.05s steps(6),cursor 1.05s step-end infinite alternate;
+        }
+
+        @keyframes cursor{
+            50%{border-color: transparent;}
+        }
+
+        @keyframes typing{
+            from{width:0;}
+        }
+
+    </style>
+</head>
+<body>
+     <div class="container">
+        <p>Hello.</p>
+     </div>
+</body>
+</html>

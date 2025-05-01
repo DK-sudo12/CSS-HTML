@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Challenge Exercises</title>
+    <style>
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .flex-box {
+            border-style: solid;
+            border-width: 1px;
+            border-color: gray;
+            border-radius: 5px;
+            height: 100px;
+            width: 300px;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .text {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .number {
+            background-color: rgb(37, 101, 219);
+            border-radius: 12px;
+            padding-left: 9px; 
+            padding-right: 9px; 
+            padding-top: 2px;
+            padding-bottom: 2px;
+            color: white;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-box">
+        <div class="home">
+            <div class="text">Home</div>
+            <div class="number">14</div>
+        </div>
+        <div class="home">
+            <div class="text">Notifications</div>
+            <div class="number">3</div>
+        </div>
+        <div class="home">
+            <div class="text">Messages</div>
+            <div class="number">5</div>
+        </div>
+    </div>
+</body>
+
+</html>

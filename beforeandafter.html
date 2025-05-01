@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEfore and after</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        h1 {
+            font-family: roboto;
+            position: relative;
+            width: max-content;
+            cursor: pointer;
+        }
+
+        h1::before{
+            content:"";
+            background: linear-gradient(to right, red, blue);
+            height: 5px;
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            bottom: -5px;
+            animation-name: tip;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+        @keyframes tip{
+            from{
+                width: 0px;
+            }
+            to{
+                width: 100%;
+            }
+        }
+        h1:hover:before{
+            width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HELLO guys</h1>
+</body>
+
+</html>

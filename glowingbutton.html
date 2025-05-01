@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glowing button</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+        }
+
+        .glow-button{
+            background-color:black;
+            border: none;
+            height: 50px;
+            width: 150px;
+            color: gray;
+            border-radius: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .glow-button::after{
+            content: "";
+            position: absolute;
+            height: 118%;
+            width: 105%;
+            background-image:linear-gradient(to bottom right,blue,purple);
+            border-radius: 150px;
+            z-index: -1;
+        }
+        .glow-button:hover{
+           z-index: 0;
+           box-shadow: 10px 10px 50px blue,-10px -10px 50px purple
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="glow-button">Glow up</button>
+
+
+</body>
+
+</html>

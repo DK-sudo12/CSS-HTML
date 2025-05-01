@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+
+/* if any paragraph tag present inside div this will be impliment         
+        div p{
+            color: aqua;
+            background-color: lightpink;
+        } */
+/* if p tag rigth inside div then this css will applied */
+        /* div > p{
+            color: aqua;
+            background-color: lightpink;
+        } */
+/* if we want to apply style just before div end So,it will apply and it will also know as next sibbling of div */
+        div + p{
+            color: aqua;
+            background-color: lightpink;
+        }
+       
+    </style>
+</head>
+<body>                       
+    <div>
+        <ul>
+            <li><p>MOre with CSS selector</p></li>
+            <li>it will not impliment</li>
+        </ul>
+        
+
+        <div>
+            <p>more on css selector</p>
+        </div>
+    </div>
+
+    <p>the more on css selector10000</p>
+</body>
+</html>

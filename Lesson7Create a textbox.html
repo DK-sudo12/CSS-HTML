@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a textbox</title>
+    <style>
+        .search-bar {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            border-width: 1px;
+            cursor: pointer;
+        }
+
+        .search-bar1 {
+            padding-right: 200px;
+            width: 500px;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: gray;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .search-bar1:active {
+            border-width: 1px;
+        }
+
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+
+        .Email_name {
+            margin-bottom: 5px;
+        }
+
+        .text_box {
+            margin-top: 5px;
+            padding-right: 233px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border-radius: 5px;
+            border-width: 1.5px;
+
+        }
+
+        .container {
+
+            padding-left: 2px;
+
+        }
+
+        .container-button {
+
+            padding-left: 159px;
+            padding-right: 159px;
+            width: 400px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: rgb(41, 67, 216);
+            border-radius: 20px;
+            border: none;
+            color: white;
+        }
+
+        .image2 {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 120px;
+        }
+
+        .boxes {
+            display: flex;
+            vertical-align: middle;
+        }
+
+        .text {
+            margin-right: 0px;
+            margin-left: 5px;
+            border: none;
+        }
+
+        .text:active {
+            border-width: 1px;
+        }
+
+        .tweet-button {
+            background-color: rgb(29, 155, 240);
+            border: none;
+            color: white;
+            border-radius: 20px;
+            margin-top: auto;
+            margin-left: 16px;
+            margin-bottom: 11px;
+            vertical-align: top;
+            height: 19px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input class="search-bar" type="text" placeholder="Search">
+    <br>
+    <hr>
+    <p><input class="search-bar1" type="text" placeholder="Search Google or type a URL "></p>
+    <hr>
+    <div>
+        <label class="Email_name" for="Email">Email</label>
+        <br>
+        <input class="text_box" id="Email" type="text">
+        <br>
+        <p>By clicking Agree & Join, you agree to the Privacy Policy.</p>
+    </div>
+    <div class="container"><button class="container-button">Agree & join</button></div>
+    <br>
+    <hr>
+    <br>
+    <div class="boxes">
+        <img class="image2" src="MainBefore.jpg" alt="">
+        <input class="text" type="text" placeholder="What's happening?">
+        <button class="tweet-button">Tweet</button>
+    </div>
+
+</body>
+
+</html>

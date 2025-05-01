@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-12g</title>
+    <style>
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+
+        .flex2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .dogu {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 80px;
+        }
+
+        .profile-info {
+            margin-left: 10px;
+
+        }
+
+        .Name {
+            font-weight: bold;
+        }
+
+        .title {
+            color: rgb(150, 150, 150);
+            width: 100px;
+        }
+
+        .identity {
+            color: rgb(150, 150, 150);
+        }
+
+        .button {
+            margin-left: 100px;
+        }
+
+        .button1 {
+            background-color: rgb(0, 140, 255);
+            border-radius: 5px;
+            border: none;
+            color: white;
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox">
+        <div class="flex2">
+            <div class="pofile-pic">
+                <div class="image">
+                    <img class="dogu" src="dog.jpg">
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="Name">Oliver</div>
+                <div class="title">the Dog</div>
+                <div class="identity">Popular</div>
+            </div>
+            <div class="button">
+                <button class="button1">Follow</button>
+            </div>
+        </div>
+
+        <div class="flex2">
+            <div class="pofile-pic">
+                <div class="image">
+                    <img class="dogu" src="MainBefore.jpg">
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="Name">Igu</div>
+                <div class="title">the iguwana</div>
+                <div class="identity">Popular</div>
+            </div>
+            <div class="button">
+                <button class="button1">Follow</button>
+            </div>
+        </div>
+
+
+        <div class="flex2">
+            <div class="pofile-pic">
+                <div class="image">
+                    <img class="dogu" src="61eo0WHaqzL.jpg">
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="Name">Luna</div>
+                <div class="title">the pig</div>
+                <div class="identity">Popular</div>
+            </div>
+            <div class="button">
+                <button class="button1">Follow</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

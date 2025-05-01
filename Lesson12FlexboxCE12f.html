@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box12f</title>
+    <style>
+        .Flexbox {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(141, 70, 199);
+            height: 50px;
+            width: 700px;
+            align-items: center;
+            margin: 0px;
+            justify-content: space-between;
+        }
+        p{
+           color: white;
+           margin-left: 10px;
+           margin-right: 0px;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 14px;
+           display: flex;
+
+        }
+        .input{
+           width: 380px;
+           
+        }
+        .box{
+            padding-right:280px ;
+            border-radius: 20px;
+            border: none;
+            padding-left: 10px;
+            height: 25px;
+            margin-left: 1px; 
+            justify-content: center;
+        }
+
+        .button-box{
+            margin-right: 10px;
+            margin-left: 75px;           
+        }
+
+        .button{
+            background-color:rgb(141, 70, 199) ;
+            color:white;
+            border-color: rgb(255,255,255);
+            border-width: 1px;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            border-radius: 3px;
+            justify-content: end;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Flexbox">
+        <div class="home-page">
+            <p>Home</p>
+        </div>
+        <div class="input">
+            <input class="box" type="text" placeholder="Search">
+        </div>
+        <div class="button-box">
+            <button class="button">
+                Download
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

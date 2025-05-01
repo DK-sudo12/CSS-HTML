@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Input Laible</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .box-fill {
+        margin: 20px;
+        position: relative;
+    }
+
+    .box-fill label {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 15px;
+        font-size: 12px;
+        padding: 0 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: .5s;
+        background-color: white;
+    }
+
+    .box-fill input{
+        height: 35px;
+        width: 360px;
+        font-size: 16px;
+        padding: 0 15px;
+        border: 1.2px solid;
+        background: transparent;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .box-fill input:focus~label
+    ,.box-fill:valid~label{
+        top: 0px;
+        font-size:14px ;
+    }
+</style>
+
+<body>
+    <div class="box-fill">
+        <input type="text" id="name">
+        <label for="name">Enter Name</label>
+    </div>
+</body>
+
+</html>

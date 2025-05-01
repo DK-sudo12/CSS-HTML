@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        .subscribe-button {
+            background-color: rgb(204, 0, 0);
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.1s;
+            
+        }
+
+        .subscribe-button:hover {
+            opacity: 0.7;
+        }
+
+        .subscribe-button:active {
+            opacity: 0.3;
+        }
+
+        .join-button {
+            background-color: white;
+            border-color: rgb(6, 95, 212);;
+            border-width: 1px;
+            border-radius: 2px;
+            color: rgb(6, 95, 212);
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 12px;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s;
+            vertical-align: auto;
+        }
+
+        .join-button:hover {
+            background-color:  rgb(6, 95, 212);
+            color: white;
+        }
+
+        .join-button:active {
+            opacity: 0.7;
+        }
+
+        .tweet-button {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 6px;
+            vertical-align: auto;
+
+        }
+
+        .tweet-button:hover {
+            box-shadow: 5px 5px 12px rgba(0,0,0,0.2);
+        }
+        .tweet-button:active{
+            opacity:0.5 ;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+</body>
+
+</html>

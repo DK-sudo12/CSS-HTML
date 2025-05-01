@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(235, 229, 229);
+        }
+
+        .card {
+            height: 650px;
+            width: 600px;
+        }
+
+        .box {
+            height: 700px;
+        }
+
+        .img-box {
+            border-radius: 10px;
+            height: 700px;
+            position: relative;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+            overflow: hidden;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            transition: transform 2s;
+        }
+
+        .text {
+            background: linear-gradient(transparent, black 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 0px;
+            border-radius: 10px;
+            height: 0px;
+            transition: height 0.5s;
+            line-height: 40px;
+            overflow: hidden;
+        }
+
+        .img-box:hover img{
+           transform: scale(1.1);
+        }
+
+        .img-box:hover .text {
+            height: 100%;
+        }
+
+        .text p{
+            margin-bottom: 30px;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+        .text h2{
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .text button{
+            margin-bottom: 10px;
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 20px;
+            border-radius: 30px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="box">
+            <div class="img-box">
+                <img class="pic" src="image/2ATHYW0-1038x778.jpg">
+                <div class="text">
+                    <h2>Flimy</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad veniam repellendus, obcaecati
+                        natus iste vel officia eius, placeat nemo suscipit, quaerat deleniti est inventore similique
+                        quidem
+                        pariatur dicta voluptates.
+                    </p>
+                    <button>BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

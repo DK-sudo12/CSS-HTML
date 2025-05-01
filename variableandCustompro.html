@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and custom property</title>
+    <style>
+        /* GLOBAL VARIABLE */
+        :root{
+            --back-color: rgb(182, 199, 255);           
+            --text-color: rgb(104, 243, 24);
+            --bo-color: lightpink;
+            --maxh:80px;
+        }
+        .box{
+            background-color:var(--back-color);
+            color:var(--text-color);
+            border-color: var(--bo-color);
+            border-style: solid;
+            height: var(--maxh);
+            display: inline-block;
+            width: 200px;
+            margin-right: var(--maxh);
+        }
+
+        .container{
+            background-color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+
+
+        /*LOCAL VARIABLE*/
+        /* .box {
+            --back-color: rgb(182, 199, 255);----->Custom Property;           
+            --text-color: rgb(104, 243, 24);
+            --bo-color: lightpink;
+            background-color: var(--back-color); ----->Variable 
+            color: var(--text-color);
+            border-color: var(--bo-color);
+            border-style: solid;
+            height: 150px;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .container {
+            --b-color: yellow;
+            background-color: var(--b-color);
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Classic</div>
+        <div class="box">Classic</div>
+        <div class="box">Classic</div>
+
+    </div>
+</body>
+
+</html>

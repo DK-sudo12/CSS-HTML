@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATED-BORDER-CSS</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .anime{
+            height: 100px;
+            width: 500px;
+            background-color: bisque; 
+            position: relative;         
+        }
+        
+        @property --angle{
+            syntax:"<angle>";
+            initial-value: 0deg;    
+            inherits: false;
+                
+        }
+
+        .anime::after,.anime::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;     
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: 1;
+            padding: 4px;
+            background-image:conic-gradient( from var(--angle), red,blue,purple) ;
+            animation: 1s slide linear infinite;
+        }
+        .anime::before{
+            filter: blur(1.5em);
+        }
+
+        @keyframes slide {
+            from{
+                --angle:0deg;
+            }
+
+            to{
+                --angle:360deg;
+            }
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <DIv class="anime">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor consequatur, illo odit blanditiis
+        quod ratione unde voluptatum atque sit vel cum delectus, facere suscipit sapiente sed maxime sunt hic inventore,
+        sint provident deleniti et iure assumenda.
+    </DIv>
+
+</body>
+
+</html>
